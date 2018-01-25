@@ -1,7 +1,10 @@
-import { ArchiveTodosPage } from './../archive-todos/archive-todos';
-import { TodoProvider } from './../../providers/todo/todo';
 import { Component } from '@angular/core';
 import { NavController, AlertController, reorderArray, ToastController } from 'ionic-angular';
+
+import { ArchiveTodosPage } from './../archive-todos/archive-todos';
+
+import { TodoProvider } from './../../providers/todo/todo';
+
 
 
 @Component({
@@ -10,7 +13,7 @@ import { NavController, AlertController, reorderArray, ToastController } from 'i
 })
 export class HomePage {
   public todos: string[] = [];
-  public reorderIsEnabled: Boolean = false;
+  public reorderIsEnabled: boolean = false;
   public archiveTodosPage: any = ArchiveTodosPage;
 
   constructor(
